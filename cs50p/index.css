@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --g: #afff6b;
+    --transition: all 0.3s ease;
+    --shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.4);
+    --text-shadow: 1px 0px 15px rgb(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: white;
+}
+
+/* Header Section */
+.main {
+    padding: 40px;
+    overflow: hidden;
+}
+
+.main .scroll {
+    margin-top: 50px;
+    width: 200vw;
+    display: flex;
+    transition: transform 0.5s;
+    transform: translateX(0);
+}
+
+/* Join Container */
+.join-container {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center; /* Add this */
+    align-items: center;
+    padding: 0 20px; /* Add some padding to prevent edge touching */
+}
+
+.join-section {
+    width: 100%; /* Change from 50% to 100% */
+    max-width: 800px; /* Add max-width for better control */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-shadow: 1px 0px 15px rgb(0, 0, 0, 0.5);
+}
+
+.join-section h2 {
+    font-size: 80px;
+}
+
+.join-section .join-p {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.join-button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--g);
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.join-button:hover,
+.join-button:focus {
+    background-color: #ddf3bd;
+    transform: translateY(-2px);
+}
+
+/* Check Container */
+.check-container {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.pop {
+    width: 400px;
+    background-color: var(--g);
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.id-no {
+    font-size: 20px;
+}
+
+.alert {
+    margin: 5px;
+    color: red;
+}
+
+.id-card {
+    display: flex;
+    gap: 5px;
+}
+
+#input-field {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    transition: var(--transition);
+}
+
+#input-field:focus {
+    outline: 2px solid var(--g);
+    outline-offset: 2px;
+}
+
+#id-button {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#id-button:hover,
+#id-button:focus {
+    background-color: #f0f0f0;
+}
+
+.hide {
+    display: none;
+}
+
+/* Topics Section */
+.topics {
+    height: 30px;
+    display: flex;
+    background-color: var(--g);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+/* Cards Section */
+.card-container {
+    padding: 80px 40px;
+    display: flex;
+    color: black;
+    margin: 20px 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 200px;
+    background-color: white;
+    border: 3px solid var(--g);
+    box-shadow: 0 8px 14px 0 rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: var(--transition);
+    padding: 20px;
+}
+
+.card h4 {
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 0px 15px rgb(0, 0, 0, 0.2);
+}
+
+.green {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: var(--g);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    width: 40vw;
+    min-height: 200px;
+    border: 2px solid var(--g);
+    margin: 100px auto 0;
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Footer */
+#copy {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .join-section {
+        width: 80%;
+    }
+    
+    .join-section h2 {
+        font-size: 60px;
+    }
+    
+    .card-container {
+        padding: 40px 20px;
+    }
+    
+    .contact {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .join-section h2 {
+        font-size: 48px;
+    }
+    
+    .join-section .join-p {
+        font-size: 24px;
+    }
+    
+    .pop {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .contact {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 20px;
+    }
+    
+    .join-section h2 {
+        font-size: 36px;
+    }
+    
+    .join-section .join-p {
+        font-size: 20px;
+    }
+    
+    .join-button {
+        width: 180px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    #input-field {
+        width: 180px;
+    }
+    
+    .card-container {
+        padding: 20px 10px;
+    }
+}
