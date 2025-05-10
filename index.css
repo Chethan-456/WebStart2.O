@@ -7,12 +7,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 html{
-        scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -22,48 +20,6 @@ body{
  
     /* padding-left: 100px;
     padding-right: 100px; */
-}
-
-nav{
-    position:fixed;
-    width: 100%;
-    height: 60px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    z-index: 100;
-    #club-logo {
-        display: flex;
-        align-items: center;
-        img{
-            height: 50px;
-            width: 60px;
-            padding: 2px;
-            margin: 20px;
-        }
-    }
-    
-    .menus {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        padding: 50px;
-    
-        a{
-            cursor: pointer;
-            margin-left: 20px;
-            text-decoration: none;
-            color: white;
-            
-        }
-
-        .a:hover {
-            border-bottom: 2px solid white;
-        }
-    
-    }
-
 }
 
 .main{
@@ -115,8 +71,6 @@ nav{
                     background-color:#ddf3bd ;
                 }
             }
-
-
         }
         .check-container{
             width: 100vw;
