@@ -61,7 +61,7 @@ function checkIfRegistered(id) {
     scrollDiv(); 
     
     setTimeout(() => {
-      window.location.href = 'form.html';
+      window.location.href = '../form.html';
     }, 600); 
   }
 }
