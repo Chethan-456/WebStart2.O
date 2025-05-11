@@ -6,12 +6,11 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #1d0039;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;  /* Full height of the viewport */
-  overflow: hidden; /* Prevent scrolling */
 }
 
 #vanta-bg {
@@ -38,6 +37,7 @@ body {
 }
 
 .form-box h2 {
+  margin-top: 100px;
   text-align: center;
   color: #fff;
   font-size: 1.8rem;
@@ -187,4 +187,10 @@ a:hover {
 .checkbox-group input[type="radio"] {
   margin-right: 5px;
   accent-color: #d4ff00; /* Highlight color for the radio button */
+}
+
+@media (width < 500px) {
+  .form-box h2 {
+    margin-top: 200px;
+}
 }

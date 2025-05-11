@@ -121,6 +121,13 @@
       document.getElementById("termsModal").style.display = "none";
     }
 
+    let idList = JSON.parse(localStorage.getItem('idn'))
+    console.log(idList)
+    let l=idList.length;
+    let idValue= idList[l-1];
+    document.querySelector("#idnum").value= idValue;
+
+
   </script>
 </body>
 
