@@ -630,3 +630,15 @@ body {
     width: 25px;
     height: 22px;
 }
+
+.join-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* fills parent height */
+}
+
+.join-section {
+  text-align: center;
+}
+
