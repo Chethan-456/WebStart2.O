@@ -31,8 +31,9 @@ body {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     opacity: 80%;
     animation: fadeIn 0.2s ease-in-out;
-    margin: 10px;
-    height: -2px;
+    margin: 1px;
+    height: -9px;
+    margin-bottom: 9%;
 
 }
 
@@ -194,3 +195,7 @@ a:hover {
     margin-top: 200px;
 }
 }
+body::-webkit-scrollbar{
+    display : none;
+}
+

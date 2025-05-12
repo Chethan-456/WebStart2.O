@@ -27,7 +27,7 @@ body{
 nav{
     position:fixed;
     width: 100%;
-    height: 60px;
+    height: 40px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -37,10 +37,11 @@ nav{
         display: flex;
         align-items: center;
         img{
-            height: 70px;
+           height: 50px;
             width: 80px;
             padding: 2px;
-            margin: 20px;
+            margin: 15px;
+        }
         }
     }
     
@@ -64,7 +65,6 @@ nav{
     
     }
 
-}
 
 .main{
     /* background-image: url('assets/background 1.jpg'); */
@@ -181,8 +181,6 @@ nav{
     align-items: center;
     padding: 5px;
 
-    .html , .CSS , .JS{
-        box-shadow: 0 8px 14px 0 rgba(0,0,0,0.4);    }
 }
 
 .card-container{
@@ -222,11 +220,13 @@ nav{
             font-size: 15px;
         }
 
+      
 }
 .card:hover{
     transform: scale(1.13);
 }
 }
+
 
 .contact{
     width: 40vw;
@@ -294,8 +294,7 @@ nav{
             }
         }
     }
-
-    .card-container{
+        .card-container{
         flex-direction: column;
         gap: 18px;
         padding: 0;
@@ -347,12 +346,13 @@ nav{
         }
     }
 
-    .card-container{
+        .card-container{
         flex-direction: column;
         gap: 18px;
         padding: 0;
         align-items: center;
     }
+
 
     .contact{
         width: 80vw;
@@ -398,10 +398,9 @@ nav{
             }
         }
     }
-
     .card-container{
-        gap: 18px;
-        align-items: center;
+    gap: 18px;
+    align-items: center;
     }
 
     .contact{
@@ -486,159 +485,6 @@ nav{
   margin-top: 10px;
 }
 
-:root {
-    --g: #28a745; /* Green theme color */
+body::-webkit-scrollbar{
+    display : none;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: black;
-}
-
-/* Initially hide the card-container */
-.card-container {
-    padding: 80px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 30px;
-    opacity: 0;
-    visibility: hidden; /* Make the container invisible initially */
-    transition: opacity 1s ease-in-out, visibility 0s 1s; /* Fade in, but delay visibility change */
-}
-
-/* Card styles */
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;  /* Center content vertically */
-    align-items: center;      /* Center content horizontally */
-    width: 280px;
-    height: 230px;
-    background: linear-gradient(white, white) padding-box,
-                linear-gradient(135deg, var(--g), lightgreen) border-box;
-    border: 3px solid transparent;
-    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    text-align: center;        /* Center the text */
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeSlideUp 0.8s ease forwards;
-    color: black;
-}
-
-/* Keyframes for Scroll Animation */
-@keyframes fadeSlideUp {
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Staggered animation delay for each card */
-.card:nth-child(1) {
-    animation-delay: 0.3s;
-}
-
-.card:nth-child(2) {
-    animation-delay: 0.5s;
-}
-
-.card:nth-child(3) {
-    animation-delay: 0.7s;
-}
-
-.card:nth-child(4) {
-    animation-delay: 0.9s;
-}
-
-/* Hover effect */
-.card:hover {
-    transform: scale(1.13);
-    box-shadow: 0 0 25px var(--g), 0 0 35px black;
-}
-
-/* To make individual cards fade in one by one */
-.card-container.visible {
-    visibility: visible; /* Set visibility to visible when scrolled into view */
-    opacity: 1; /* Fade in the container */
-    transition: opacity 1s ease-in-out, visibility 0s 0s; /* Make the container visible and transition opacity */
-}
-
-/* Styling the green circle with image inside */
-.green {
-    width: 70px;
-    height: auto;
-    padding: 5px;
-    margin: 10px 0;
-    border-radius: 50%;
-    background-color: var(--g);
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.green img {
-    width: 40px;
-    height: 40px;  /* Adjust image size inside the circle */
-}
-
-/* Hover effect for the circle */
-.green:hover {
-    transform: scale(1.2);
-}
-
-/* Card text styles */
-.card p {
-    font-size: 22px;
-    margin: 5px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
-}
-
-.skills {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: black;
-    font-size: 15px;
-}
-
-.skills li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 13px;
-    margin: 6px 0;
-}
-
-.skills li img {
-    width: 25px;
-    height: 22px;
-}
-
-.join-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* fills parent height */
-}
-
-.join-section {
-  text-align: center;
-}
-
