@@ -10,7 +10,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;  /* Full height of the viewport */
 }
 
 #vanta-bg {
@@ -37,7 +36,7 @@ body {
 }
 
 .form-box h2 {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
   color: #fff;
   font-size: 1.8rem;
@@ -191,6 +190,6 @@ a:hover {
 
 @media (width < 500px) {
   .form-box h2 {
-    margin-top: 200px;
+    margin-top: 50px;
 }
 }
